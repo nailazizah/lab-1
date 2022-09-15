@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d482ce02-3b5f-4900-b3db-e57756cbf7ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_django/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishlist/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -39,7 +42,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662565758944</updated>
       <workItem from="1662565761972" duration="4000" />
-      <workItem from="1662565789337" duration="6414000" />
+      <workItem from="1662565789337" duration="7109000" />
+      <workItem from="1663143371043" duration="9412000" />
     </task>
     <servers />
   </component>
