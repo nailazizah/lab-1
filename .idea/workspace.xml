@@ -4,6 +4,7 @@
     <list default="true" id="d482ce02-3b5f-4900-b3db-e57756cbf7ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_django/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishlist/templates/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/templates/wishlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist/views.py" afterDir="false" />
     </list>
@@ -43,7 +44,8 @@
       <updated>1662565758944</updated>
       <workItem from="1662565761972" duration="4000" />
       <workItem from="1662565789337" duration="7109000" />
-      <workItem from="1663143371043" duration="9412000" />
+      <workItem from="1663143371043" duration="10413000" />
+      <workItem from="1663726251770" duration="6160000" />
     </task>
     <servers />
   </component>
