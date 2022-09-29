@@ -2,8 +2,6 @@
 
 {% block content %}
 
-
-<!-- As a heading -->
 <nav class="navbar bg-light">
     <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">Welcome to Wishlist!</span>
@@ -17,18 +15,24 @@
     <title>Wishlist</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
+
+<style>
+    body {
+        background-color: #ddffdd;
+    }
+</style>
+
 <body>
 
-<h5>Nama: </h5>
-<b>{{nama}}</b>
+<h5>Nama: {{nama}} </h5>
 
-<table>
+<table class="table table-striped">
+    <thead class="thead-light">
     <tr>
-        <th>Nama Barang</th>
-        <th>Harga Barang</th>
-        <th>Deskripsi</th>
+        <th scope="col">Nama Barang</th>
+        <th scope="col">Harga Barang</th>
+        <th scope="col">Deskripsi</th>
     </tr>
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for barang in list_barang %}
     <tr>
         <th>{{barang.nama_barang}}</th>
@@ -36,7 +40,9 @@
         <th>{{barang.deskripsi}}</th>
     </tr>
     {% endfor %}
+    </tbody>
 </table>
+
 <h5>Sesi terakhir login: {{ last_login }}</h5>
 <button><a href="{% url 'wishlist:logout' %}">Logout</a></button>
 
