@@ -75,3 +75,36 @@ def logout_user(request):
     response = HttpResponseRedirect(reverse('wishlist:login'))
     response.delete_cookie('last_login')
     return response
+
+
+def wishlist_ajax(request):
+    data_barang_wishlist = BarangWishlist.objects.all()
+
+    context = {
+        'list_barang': data_barang_wishlist,
+        'nama': 'Naila Azizah',
+        'last_login': request.COOKIES['last_login'],
+    }
+    return render(request, "wishlist.html", context)
+    # if request.method == POST;
+    #     nama_barang = request.POST.get("nama_barang")
+    #     harga_barang = request.POST.get("harga_barang")
+    #     deskripsi = request.POST.get("deskripsi")
+    #
+    #     new_item = BarangWishlist(nama_barang=nama_barang, harga_barang=harga_barang, deskripsi=deskripsi)
+    #     new_item.save()
+    #
+    #     return HttpResponse(b'CREATED', status=201)
+    # return HttpResponse("Invalid method", status=405)
+
+
+def create_wishlist(request):
+    if request.method == 'POST':
+        nama_barang = request.POST.get('nama_barang')
+        harga_barang = request.POST.get('harga_barang')
+        deskripsi = request.POST.get('deskripsi')
+
+        new_item = BarangWishlist.objects.create(nama_barang=nama_barang,deskripsi=deskripsi,harga_barang=harga_barang)
+        new_item.save()
+        response = HttpResponseRedirect(reverse("wishlist:show_wishlist_ajax"))
+        return response
